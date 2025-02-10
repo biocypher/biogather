@@ -1,0 +1,68 @@
+site_name: biogather
+site_description: Library to facilitate extraction of information from text and other modalities. Part of the BioCypher ecosystem.
+site_author: Sebastian Lobentanzer
+site_url: https://biogather.readthedocs.io/
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+theme:
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_submodules: true
+            show_category_heading: true
+            show_if_no_docstring: true
+            show_signature_annotations: true
+      default_handler: python
+  - awesome-pages
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/biocypher
+      name: Sebastian Lobentanzer
+
+copyright: Copyright &copy 2025 Sebastian Lobentanzer
+
+repo_url: https://github.com/biocypher/biogather
+repo_name: biocypher/biogather
+
+watch:
+  - src/biogather

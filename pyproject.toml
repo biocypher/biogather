@@ -20,6 +20,21 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+numpy = "1.24.3"
+spacy = "^3.7.2"
+scikit-learn = "^1.4.0"
+nltk = "^3.8.1"
+transformers = "^4.37.2"
+torch = "^2.2.0"
+gensim = "^4.3.2"
+
+[tool.poetry.extras]
+scispacy = [
+    "scispacy",
+    "nmslib",
+    "numpy",
+    "scipy",
+]
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "*"
@@ -42,7 +57,7 @@ parallel = true
 exclude_lines = ["pragma: no cover"]
 precision = 2
 [tool.ruff]
-line-length = 88
+line-length = 120
 
 [tool.ruff.lint]
 select = ["ALL"]

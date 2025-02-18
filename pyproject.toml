@@ -27,12 +27,14 @@ nltk = "^3.8.1"
 transformers = "^4.37.2"
 torch = "^2.2.0"
 gensim = "^4.3.2"
+scispacy = { version = "^0.5.5", optional = true }
+nmslib = { version = "^2.1.1", optional = true }
+scipy = { version = "^1.15.2", optional = true }
 
 [tool.poetry.extras]
 scispacy = [
     "scispacy",
     "nmslib",
-    "numpy",
     "scipy",
 ]
 

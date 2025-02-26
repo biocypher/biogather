@@ -47,19 +47,17 @@ theme:
     - navigation.top
   name: material
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: green
-      accent: light green
+    - scheme: default
+      primary: blue grey
+      accent: light blue
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: green
-      accent: light green
+    - scheme: slate
+      primary: blue grey
+      accent: light blue
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch-off
         name: Switch to light mode
 
 plugins:

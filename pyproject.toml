@@ -96,7 +96,7 @@ known-first-party = ["src", "biogather"]
 lines-after-imports = 1
 
 [tool.pydoclint]
-style = "google"  # TODO: Other styles are possible here, like 'numpy'
+style = "google"
 arg-type-hints-in-docstring = false
 check-return-types = false
 check-yield-types = false

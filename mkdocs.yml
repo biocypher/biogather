@@ -41,10 +41,8 @@ markdown_extensions:
 theme:
   features:
     - content.code.annotate
-    - navigation.indexes
     - navigation.instant
-    - navigation.tracking
-    - navigation.top
+    - navigation.tabs
   name: material
   palette:
     - scheme: default

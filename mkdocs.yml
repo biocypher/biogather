@@ -1,7 +1,30 @@
 site_name: biogather
 site_description: Library to facilitate extraction of information from text and other modalities. Part of the BioCypher ecosystem.
 site_author: Sebastian Lobentanzer
-site_url: https://biogather.readthedocs.io/
+site_url: https://biocypher.github.io/biogather/
+
+nav:
+  - Home: index.md
+
+  - About:
+      - Project: about/project.md
+      - Design philosophy: about/design-philosophy.md
+      - Use Cases: about/use-cases.md
+
+  - Get Started:
+      - Installation: installation.md
+      - Quickstart: learn/quickstart.md
+
+  - Learn:
+      - Tutorials:
+          - Basics: learn/tutorials/basics.md
+
+      - HowTo / FAQ:
+          - learn/guides/index.md
+
+  - Reference:
+      - Reference Index: reference/index.md
+
 
 markdown_extensions:
   - admonition
@@ -51,7 +74,6 @@ plugins:
             show_if_no_docstring: true
             show_signature_annotations: true
       default_handler: python
-  - awesome-pages
 
 extra:
   social:

@@ -104,5 +104,5 @@ check-yield-types = false
 Homepage = "https://github.com/biocypher/biogather"
 "Source Code" = "https://github.com/biocypher/biogather"
 "Bug Tracker" = "https://github.com/biocypher/biogather/issues"
-Documentation = "https://biogather.readthedocs.io"
+Documentation = "https://biocypher.github.io/biogather"
 Download = "https://pypi.org/project/biogather/#files"
